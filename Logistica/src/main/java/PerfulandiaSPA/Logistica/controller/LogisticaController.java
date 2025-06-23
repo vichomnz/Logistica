@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/logistica")
 @AllArgsConstructor
-public class PedidoController {
+public class LogisticaController {
     private final LogisticaService LogisticaService;
 
     @PostMapping("/registrar")

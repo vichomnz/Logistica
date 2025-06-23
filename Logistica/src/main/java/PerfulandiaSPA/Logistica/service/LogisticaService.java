@@ -1,6 +1,6 @@
 package PerfulandiaSPA.Logistica.service;
 
-   import PerfulandiaSPA.Logistica.repository.PedidoRepository; 
+   import PerfulandiaSPA.Logistica.repository.LogisticaRepository; 
    import lombok.AllArgsConstructor;
    import org.springframework.stereotype.Service;
    import PerfulandiaSPA.Logistica.model.LogisticaModel;
@@ -12,7 +12,7 @@ package PerfulandiaSPA.Logistica.service;
 @Service
 @AllArgsConstructor
 public class LogisticaService {
-    private final PedidoRepository pedidoRepository;
+    private final LogisticaRepository pedidoRepository;
 
     public LogisticaModel registrarPedido(String idPedido, String nombreTransportista) {
         if (pedidoRepository.existsByIdPedido(idPedido)){
